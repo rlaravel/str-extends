@@ -1,0 +1,35 @@
+{
+    "name": "rlaravel/str-extends",
+    "description": "Extendemos los helpers Str de Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Moreno",
+            "email": "rlaravel1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rlaravel\\StrExtends\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rlaravel\\StrExtends\\Test\\": "tests/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rlaravel\\StrExtends\\Providers\\StrExtendsServiceProvider"
+            ]
+        }
+    }
+}
